@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <!-- 网站描述+关键字+作者 -->
+  <meta name="description" content="猴哥的个人wiki站，收集、整理、提炼所学的知识">
+  <meta name="keywords" content="wiki,AI实战">
+  <meta name="author" content="猴哥">
+  <title>猴哥的AI知识库</title>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <!-- 侧边栏箭头样式 -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" />
+  <!-- <link rel="stylesheet" href="https://unpkg.com/docsify-toc@1.0.0/dist/toc.css"> -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-plugin-toc@1.3.1/dist/light.css"> 
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      logo: '/media/icon.svg',
+      name: 'Way To AI', // 文档标题，会显示在侧边栏顶部居中位置
+      // repo: 'docsifyjs/docsify', // 仓库链接，会显示在右上角GitHub图标
+      loadNavbar: true,
+      loadSidebar: true,
+      subMaxLevel: 0, // 侧边栏显示的最大层级
+      coverpage: true,
+      // relativePath: false, // 启用相对路径，最好不要用
+      // PLUGINS
+      // ----------------------------------------------------------------
+      // 页面右侧toc
+      // toc: {
+      //   scope: '.markdown-section',
+      //   headings: 'h1, h2, h3, h4, h5, h6',
+      //   title: 'Contents',
+      // },
+      toc: {
+        tocMaxLevel: 5,
+        target: 'h1, h2, h3, h4, h5, h6',
+        ignoreHeaders: ['<!-- {docsify-ignore} -->', '<!-- {docsify-ignore-all} -->']
+      },
+
+      search: {
+        paths: 'auto',
+        placeholder: 'Type to search',
+        noData: '找不到结果',
+        depth: 3,
+      },
+      // 底部导航：文件的排序是根据左侧的侧边栏来的
+      pagination: {
+          previousText: "上一页",
+          nextText: "下一页",
+          crossChapter: true,
+          crossChapterText: true,
+      },
+      // 字数统计
+      count: {
+        countable: true,
+        position: "top",
+        margin: "10px",
+        float: "right",
+        fontsize: "0.9em",
+        color: "red",
+        language: "chinese",
+        localization: {
+          words: "",
+          minute: "",
+        },
+        isExpected: true,
+      },
+
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <!-- 搜索 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <!-- 代码复制 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+  <!-- 代码高亮 --> 
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-c.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-shell-session.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-java.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-http.min.js"></script>
+  <!-- 多tab支持 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1/dist/docsify-tabs.min.js"></script>
+  <!-- 底部 上一页下一页 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-pagination@2/dist/docsify-pagination.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/external-script.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/ga.min.js"></script>
+  <!-- 页面右侧 TOC -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-plugin-toc@1.3.1/dist/docsify-plugin-toc.min.js"></script>
+  <!-- <script src="https://unpkg.com/docsify-toc@1.0.0/dist/toc.js"></script> -->
+  <!-- 侧边栏目录折叠 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+  <!-- 图片放大缩小 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
+  <!-- 字数统计 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-count@latest/dist/countable.min.js"></script>
+
+</body>
+</html>
