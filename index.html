@@ -1,32 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PE07J67DDX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-PE07J67DDX');
+  </script>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>猴哥的AI知识库</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <!-- 网站描述+关键字+作者 -->
+  <meta name="referrer" content="no-referrer" />
   <meta name="description" content="猴哥的个人wiki站，收集、整理、提炼所学的知识">
   <meta name="keywords" content="wiki,AI实战">
   <meta name="author" content="猴哥">
-  <title>猴哥的AI知识库</title>
+  <link rel="icon" href="media/logo_thumbnail.png" />
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   <!-- 侧边栏箭头样式 -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" />
   <!-- <link rel="stylesheet" href="https://unpkg.com/docsify-toc@1.0.0/dist/toc.css"> -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-plugin-toc@1.3.1/dist/light.css"> 
 </head>
+
 <body>
   <div id="app"></div>
   <script>
     window.$docsify = {
-      logo: '/media/icon.svg',
+      logo: '/media/logo_thumbnail.png',
       name: 'Way To AI', // 文档标题，会显示在侧边栏顶部居中位置
-      // repo: 'docsifyjs/docsify', // 仓库链接，会显示在右上角GitHub图标
+      repo: 'https://github.com/hougeai/knowledgebase', // 仓库链接，会显示在右上角GitHub图标
       loadNavbar: true,
       loadSidebar: true,
       subMaxLevel: 0, // 侧边栏显示的最大层级
       coverpage: true,
+      auto2top: true,
+      formatUpdated: '{MM}/{DD} {HH}:{mm}', // 文档更新时间格式
       // relativePath: false, // 启用相对路径，最好不要用
       // PLUGINS
       // ----------------------------------------------------------------
@@ -46,7 +59,9 @@
         paths: 'auto',
         placeholder: 'Type to search',
         noData: '找不到结果',
-        depth: 3,
+        depth: 3, // 搜索结果显示的最大层级
+        hideOtherSidebarContent: false, // 隐藏其他侧边栏内容
+        namespace: 'website-1', // 命名空间，防止多个文档共用搜索框
       },
       // 底部导航：文件的排序是根据左侧的侧边栏来的
       pagination: {

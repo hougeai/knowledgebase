@@ -18,5 +18,11 @@
 - [我把和老婆近一年的聊天记录发给Kimi，它的回答亮了...](docs/4.Python笔记/我把和老婆近一年的聊天记录发给Kimi，它的回答亮了....md)
 - [自制神器！家长小朋友的福音~](docs/4.Python笔记/自制神器！家长小朋友的福音~.md)
 
+<div style="text-align: center">
 
-<u>*本系列共更新**17**篇文章*</u>。
+<u>*本系列共更新**17**篇文章*</u>
+</div>
+<div style="text-align: center">
+
+[🔙返回首页](/)
+</div>

@@ -28,7 +28,8 @@ def generate_readme(dir_path='docs'):
                 f.write('- [{}]({})\n'.format(file.replace('.md', ''), rel_path))
             num = len(file_list)
             total_num += num
-            f.write('\n\n<u>*本系列共更新**{}**篇文章*</u>。\n'.format(num))
+            f.write(f'\n<div style="text-align: center">\n\n<u>*本系列共更新**{num}**篇文章*</u>\n</div>\n')
+            f.write(f'<div style="text-align: center">\n\n[🔙返回首页](/)\n</div>')
     # 生成../README.md文件
     readme_path = os.path.join(dir_path, '..', 'README.md')
     with open(readme_path, 'r', encoding='utf-8') as f:
@@ -172,14 +173,15 @@ def find(dir_path='docs'):
                     if not os.path.exists(os.path.join(dir_path, dir, url)):
                         print(dir, file, url)
 
+# 得到 logo 图片 
 def resize_image():
     img = Image.open('media/1.png')
     img.thumbnail((122, 94)) # 缩放图片
     img.save('media/logo_thumbnail.png') # 保存缩放后的图片
 
 if __name__ == '__main__':
-    # generate_readme()
+    generate_readme()
     # replace_images()
     # compress_images()
     # find()
-    resize_image()
+    # resize_image()

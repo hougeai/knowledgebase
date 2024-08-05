@@ -9,5 +9,11 @@
 - [报错解决ImportError_ libcrypto.so.10_ cannot open shared object file_ No such file or directory](docs/1.Linux笔记/报错解决ImportError_%20libcrypto.so.10_%20cannot%20open%20shared%20object%20file_%20No%20such%20file%20or%20directory.md)
 - [报错解决ImportError_ libnvinfer.so.7_ cannot open shared object file_ No such file or directory](docs/1.Linux笔记/报错解决ImportError_%20libnvinfer.so.7_%20cannot%20open%20shared%20object%20file_%20No%20such%20file%20or%20directory.md)
 
+<div style="text-align: center">
 
-<u>*本系列共更新**8**篇文章*</u>。
+<u>*本系列共更新**8**篇文章*</u>
+</div>
+<div style="text-align: center">
+
+[🔙返回首页](/)
+</div>

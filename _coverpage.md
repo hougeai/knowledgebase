@@ -18,4 +18,4 @@
 
 [<u>CSDN：AI码上来</u>](https://blog.csdn.net/u010522887)
 
-[Github]()[Get Started](README.md)
+[Github](https://github.com/hougeai/knowledgebase)[Get Started](README.md)
